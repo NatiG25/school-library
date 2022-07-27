@@ -1,5 +1,6 @@
 class Person
-  attr_accessor :name, age
+  attr_accessor :name
+  attr_accessor :age
   attr_reader :id
 
   def initialize(age, parent_perimission: true, name: 'Unknown')
@@ -14,7 +15,7 @@ class Person
   end
 
   def can_use_services
-    of_age || parent_perimission ? true : false
+    of_age || @parent_perimission
   end
 
   private :of_age
