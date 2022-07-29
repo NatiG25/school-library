@@ -11,6 +11,7 @@ class Person < Nameable
     @name = name
     @parent_perimission = parent_perimission
     @age = age
+    @rentals = []
   end
 
   def of_age
