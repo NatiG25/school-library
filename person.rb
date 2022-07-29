@@ -8,9 +8,9 @@ class Person < Nameable
   def initialize(age, name = 'Unknown', parent_perimission: true)
     super()
     @id = Random.rand(1..100)
-    @age = age
-    @parent_perimission = parent_perimission
     @name = name
+    @parent_perimission = parent_perimission
+    @age = age
   end
 
   def of_age
@@ -28,9 +28,9 @@ class Person < Nameable
   private :of_age
 end
 
-# person = Person.new(22, 'maximilianus')
-# p person.correct_name
-# p capitalizedPerson = CapitalizeDecorator.new(person)
-# p capitalizedPerson.correct_name
-# p capitalizedTrimmedPerson = TrimmerDecorator.new(capitalizedPerson)
-# p capitalizedTrimmedPerson.correct_name
+person = Person.new(22, 'maximilianus')
+p person.correct_name
+capitalizedPerson = CapitalizeDecorator.new(person)
+p capitalizedPerson.correct_name
+capitalizedTrimmedPerson = TrimmerDecorator.new(capitalizedPerson)
+p capitalizedTrimmedPerson.correct_name
