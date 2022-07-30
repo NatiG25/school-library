@@ -3,11 +3,11 @@ require_relative './decorator'
 
 class Person < Nameable
   attr_accessor :name, :age
-  attr_reader :id
+  attr_reader :id, :rentals
 
   def initialize(age, name = 'Unknown', parent_perimission: true)
     super()
-    @id = Random.rand(1..100)
+    @id = Random.rand(1..1000)
     @name = name
     @parent_perimission = parent_perimission
     @age = age
