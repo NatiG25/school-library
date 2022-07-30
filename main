@@ -21,7 +21,7 @@ def create_teacher(app)
   age = gets.chomp.to_i
   puts 'What is your specialization?'
   specialization = gets.chomp
-  app.create_teacher(name, specialization, age, parent_permission: true)
+  app.create_teacher(name, specialization, age)
   puts 'Teacher created!'
 end
 

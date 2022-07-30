@@ -39,8 +39,8 @@ class App
     @people << Student.new(name, age, classroom, parent_perimission)
   end
 
-  def create_teacher(name, specialization, age, parent_perimission: true)
-    @people << Teacher.new(name, specialization, age, parent_perimission)
+  def create_teacher(name, specialization, age)
+    @people << Teacher.new(name, specialization, age)
   end
 
   def create_rental(person, book, date)
