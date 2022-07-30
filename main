@@ -9,7 +9,7 @@ def create_student(app)
   age = gets.chomp.to_i
   puts 'Has parents\' permission? (y/n)'
   parent_permission = gets.chomp.downcase == 'y'
-  app.create_student(name, age, parent_permission)
+  app.create_student(age, name, parent_permission)
   puts 'Student created!'
 end
 

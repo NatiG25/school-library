@@ -35,8 +35,8 @@ class App
     @books << Book.new(title, author)
   end
 
-  def create_student(name, age, classroom: nil, parent_perimission: true)
-    @people << Student.new(name, age, classroom, parent_perimission)
+  def create_student(age, name, parent_perimission)
+    @people << Student.new(age, name, parent_perimission)
   end
 
   def create_teacher(name, specialization, age)
