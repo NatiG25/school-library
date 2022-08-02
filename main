@@ -26,14 +26,7 @@ class Create
 
   
 
-  def create_book(app)
-    puts 'What is the book\'s title?'
-    title = gets.chomp
-    puts 'What is the book\'s author?'
-    author = gets.chomp
-    app.create_book(title, author)
-    puts 'Book created!'
-  end
+
 
   def create_rental(app)
     puts 'Select a book from the following list by number : '
