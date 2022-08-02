@@ -3,7 +3,7 @@ def initialize(app)
     @app = app
     end
 
-def create_student(app)
+def self.create_student(app)
     puts 'Welcome to our new student!'
     puts 'What\'s your name?'
     name = gets.chomp
@@ -15,7 +15,7 @@ def create_student(app)
     puts 'Student created!'
     end
 
-    def create_teacher(app)
+    def self.create_teacher(app)
     puts 'Welcome to our new teacher!'
     puts 'What is your name?'
     name = gets.chomp

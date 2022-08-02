@@ -3,7 +3,7 @@ class CreateBooks
         @app = app
       end
 
-    def create_book(app)
+    def self.create_book(app)
         puts 'What is the book\'s title?'
         title = gets.chomp
         puts 'What is the book\'s author?'

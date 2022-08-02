@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 require './app'
+require './checkInput'
 
 def main
   app = App.new
@@ -13,7 +14,7 @@ def main
     puts '6 - List all rentals for a given person id'
     puts '7 - Exit'
     input = gets.chomp.to_i
-    check_input(app, input)
+    HandleInput.check_input(app, input)
   end
 end
 
