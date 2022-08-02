@@ -1,7 +1,4 @@
 class CreatePeople
-def initialize(app)
-    @app = app
-    end
 
 def self.create_student(app)
     puts 'Welcome to our new student!'

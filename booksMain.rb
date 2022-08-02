@@ -1,7 +1,4 @@
 class CreateBooks
-    def initialize(app)
-        @app = app
-      end
 
     def self.create_book(app)
         puts 'What is the book\'s title?'

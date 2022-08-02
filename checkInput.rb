@@ -1,12 +1,9 @@
 require './peopleMain'
 require './booksMain'
 require './rentalsMain'
+require './peopleInfo'
 
 class HandleInput
-  def initialize(app, input)
-    @app = app
-    @input = input
-  end
 
   def self.check_input(app, input)
     case input
@@ -15,7 +12,7 @@ class HandleInput
     when 3..5
       create_options(app, input)
     when 6
-      person_info(app)
+      PeopleInfo.person_info(app)
     when 7
       puts 'Goodbye!'
       raise StopIteration
@@ -60,14 +57,5 @@ class HandleInput
     else
       puts 'Invalid input!'
     end
-  end
-
-  def self.person_info(app)
-    puts 'What is the person\'s id?'
-    app.people.each_with_index do |person, index|
-      puts "#{index}. Name: #{person.name} ID: #{person.id} Age: #{person.age}"
-    end
-    id = gets.chomp
-    app.all_rentals(id.to_i)
   end
 end

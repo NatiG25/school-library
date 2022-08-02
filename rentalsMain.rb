@@ -1,7 +1,4 @@
 class CreateRentals
-    def initialize(app)
-        @app = app
-      end
 
     def self.create_rental(app)
         puts 'Select a book from the following list by number : '
