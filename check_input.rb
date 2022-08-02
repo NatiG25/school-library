@@ -1,7 +1,7 @@
-require './peopleMain'
-require './booksMain'
-require './rentalsMain'
-require './peopleInfo'
+require './people_main'
+require './books_main'
+require './rentals_main'
+require './people_info'
 
 class HandleInput
   def self.check_input(app, input)
