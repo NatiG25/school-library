@@ -4,7 +4,6 @@ require './rentalsMain'
 require './peopleInfo'
 
 class HandleInput
-
   def self.check_input(app, input)
     case input
     when 1..2

@@ -1,6 +1,5 @@
 class CreatePeople
-
-def self.create_student(app)
+  def self.create_student(app)
     puts 'Welcome to our new student!'
     puts 'What\'s your name?'
     name = gets.chomp
@@ -10,9 +9,9 @@ def self.create_student(app)
     parent_permission = gets.chomp.downcase == 'y'
     app.create_student(age, name, parent_permission)
     puts 'Student created!'
-    end
+  end
 
-    def self.create_teacher(app)
+  def self.create_teacher(app)
     puts 'Welcome to our new teacher!'
     puts 'What is your name?'
     name = gets.chomp
@@ -22,5 +21,5 @@ def self.create_student(app)
     specialization = gets.chomp
     app.create_teacher(name, specialization, age)
     puts 'Teacher created!'
-    end
+  end
 end
