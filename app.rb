@@ -11,7 +11,7 @@ class App
   def initialize
     @people = Data.load_people
     @books = Data.load_books
-    @rentals = []
+    @rentals = Data.load_rental
   end
 
   def all_books
