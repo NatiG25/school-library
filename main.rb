@@ -5,8 +5,8 @@ require './data'
 
 def main
   app = App.new
-  all_data = Data.new
-  all_data.create_files
+  data = Data.new
+  data.create_files
   loop do
     puts 'Please choose an option by entering a number'
     puts '1 - List all books'
@@ -18,6 +18,7 @@ def main
     puts '7 - Exit'
     input = gets.chomp.to_i
     HandleInput.check_input(app, input)
+    data.collect_books(app)
   end
 end
 
