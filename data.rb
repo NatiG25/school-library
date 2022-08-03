@@ -26,4 +26,18 @@ class Data
         people_collection.write(JSON.generate(app.people))
         people_collection.close
     end
+
+    def collect_rental(app)
+        return unless File.exist?('rental.json')
+        rental_collection = File.open('rental.json','w')
+        rental_collection.write(JSON.generate(app.rentals))
+        rental_collection.close
+    end
+
+    def all_collections(app)
+        collect_books(app)
+        collect_people(app)
+        collect_rental(app)
+    end
+
 end

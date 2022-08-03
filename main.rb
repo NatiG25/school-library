@@ -18,8 +18,7 @@ def main
     puts '7 - Exit'
     input = gets.chomp.to_i
     HandleInput.check_input(app, input)
-    data.collect_books(app)
-    data.collect_people(app)
+    data.all_collections(app)
   end
 end
 
