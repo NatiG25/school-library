@@ -1,9 +1,12 @@
 #!/usr/bin/env ruby
 require './app'
 require './check_input'
+require './data'
 
 def main
   app = App.new
+  all_data = Data.new
+  all_data.create_files
   loop do
     puts 'Please choose an option by entering a number'
     puts '1 - List all books'
