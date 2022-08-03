@@ -19,4 +19,11 @@ class Data
         book_collection.write(JSON.generate(app.books))
         book_collection.close
     end
+
+    def collect_people(app)
+        return unless File.exist?('people.json')
+        people_collection = File.open('people.json','w')
+        people_collection.write(JSON.generate(app.people))
+        people_collection.close
+    end
 end

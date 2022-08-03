@@ -19,6 +19,7 @@ def main
     input = gets.chomp.to_i
     HandleInput.check_input(app, input)
     data.collect_books(app)
+    data.collect_people(app)
   end
 end
 
