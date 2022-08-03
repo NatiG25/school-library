@@ -54,4 +54,22 @@ class Data
 
     data
   end
+
+  
+  def self.load_people
+    data = []
+    file = './people.json'
+    return data unless File.exist?(file) && File.read(file) != ''
+
+    JSON.parse(File.read(file)).each do |person|
+    if person.key?('specialization')
+      data << Teacher.new(person['name'],person['specialization'],person['age'])
+    else
+      data << Student.new(person['age'],person['name'],person['parent_permission'])
+    end
+
+    end
+
+    data
+  end
 end

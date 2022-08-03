@@ -9,7 +9,7 @@ class App
   attr_reader :people, :books, :rentals
 
   def initialize
-    @people = []
+    @people = Data.load_people
     @books = Data.load_books
     @rentals = []
   end
