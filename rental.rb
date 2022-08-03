@@ -10,4 +10,14 @@ class Rental
 
     @date = date
   end
+
+  def to_json(*_args)
+    JSON.generate(
+      {
+        person: @person,
+        book: @book,
+        date: @date
+      }
+    )
+  end
 end
