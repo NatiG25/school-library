@@ -7,7 +7,7 @@ describe Book do
     end
 
     describe '#new' do
-    it "Creates a new instance" do
+    it "Creates a new book instance" do
         @book.should be_an_instance_of Book
         end
     end
