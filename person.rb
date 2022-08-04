@@ -14,17 +14,6 @@ class Person < Nameable
     @rentals = []
   end
 
-  def to_json(*_args)
-    JSON.generate(
-      {
-        name: @name,
-        parent_perimission: @parent_perimission,
-        age: @age,
-        rentals: @rentals
-      }
-    )
-  end
-
   def of_age
     @age > 18
   end
