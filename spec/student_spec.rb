@@ -1,14 +1,13 @@
 require 'spec_helper'
 
 describe Student do
+  before :each do
+    @student = Student.new(23, 'Nati', true, 'Aviation')
+  end
 
-    before :each do
-        @student = Student.new(23, 'Nati', true, 'Aviation')
+  describe '#new' do
+    it 'Creates a new Student instance' do
+      @student.should be_an_instance_of Student
     end
-
-    describe '#new' do
-    it "Creates a new Student instance" do
-        @student.should be_an_instance_of Student
-        end
-    end
+  end
 end

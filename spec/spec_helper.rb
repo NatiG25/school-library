@@ -6,4 +6,3 @@ require_relative '../capitalize'
 require_relative '../trimmer'
 require_relative '../classroom'
 require_relative '../rental'
-
