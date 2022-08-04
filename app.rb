@@ -3,14 +3,15 @@ require './rental'
 require './teacher'
 require './student'
 require './classroom'
+require './data'
 
 class App
   attr_reader :people, :books, :rentals
 
   def initialize
-    @people = []
-    @books = []
-    @rentals = []
+    @people = Data.load_people
+    @books = Data.load_books
+    @rentals = Data.load_rental
   end
 
   def all_books

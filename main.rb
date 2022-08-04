@@ -1,9 +1,12 @@
 #!/usr/bin/env ruby
 require './app'
 require './check_input'
+require './data'
 
 def main
   app = App.new
+  data = Data.new
+  data.create_files
   loop do
     puts 'Please choose an option by entering a number'
     puts '1 - List all books'
@@ -15,6 +18,7 @@ def main
     puts '7 - Exit'
     input = gets.chomp.to_i
     HandleInput.check_input(app, input)
+    data.all_collections(app)
   end
 end
 
