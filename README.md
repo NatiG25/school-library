@@ -32,10 +32,6 @@ To get a local copy up and running follow these simple example steps.
 
 - rubocop --color : To test ruby codes
 
-## Live Demo
-
-- [Live Demo Link]()
-
 ## Author
 
 - GitHub: [@NatiG25](https://github.com/NatiG25)
