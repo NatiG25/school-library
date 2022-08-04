@@ -81,27 +81,7 @@ class Data
       book = Book.new(rental['book']['title'], rental['book']['author'])
       p 'life'
       data << Rental.new(person, book, rental['date'])
-      # data << Rental.new(rental['person'], rental['book'], rental['date'])
     end
     data
   end
-
-
-
-
-
-
-  # def fetch_renatal(app)
-  #   file = './rental.json'
-  #   return unless File.exist?(file)
-  #   return if File.zero?(file)
-
-  #   rental_collection = File.open(file)
-  #   rental_parse = JSON.parse(rental_collection.read)
-  #   rental_parse.each do |item|
-  #     person = app.create
-  #     app.create_rental(item['person'], item['book'], item['date'])
-  #   end
-  # rental_collection.close
-  # end
 end
