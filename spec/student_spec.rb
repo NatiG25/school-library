@@ -7,7 +7,7 @@ describe Student do
     end
 
     describe '#new' do
-    it "Creates a new student instance" do
+    it "Creates a new Student instance" do
         @student.should be_an_instance_of Student
         end
     end

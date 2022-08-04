@@ -7,7 +7,7 @@ describe Person do
     end
 
     describe '#new' do
-    it "Creates a new person instance" do
+    it "Creates a new Person instance" do
         @person.should be_an_instance_of Person
         end
     end

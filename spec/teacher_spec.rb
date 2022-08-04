@@ -7,7 +7,7 @@ describe Teacher do
     end
 
     describe '#new' do
-    it "Creates a new teacher instance" do
+    it "Creates a new Teacher instance" do
         @teacher.should be_an_instance_of Teacher
         end
     end
