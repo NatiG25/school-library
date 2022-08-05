@@ -12,8 +12,8 @@ describe Nameable do
   end
 
   describe '#correct_name' do
-  it 'checks if the method raises NotImplementedError' do
-    expect {@nameable.correct_name}.to raise_error(NotImplementedError)
+    it 'checks if the method raises NotImplementedError' do
+      expect { @nameable.correct_name }.to raise_error(NotImplementedError)
+    end
   end
- end
 end
