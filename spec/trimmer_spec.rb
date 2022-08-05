@@ -13,14 +13,14 @@ describe TrimmerDecorator do
   end
 
   describe '#nameable' do
-  it 'checks if nameable is the initailze value' do
-    @trimmer_decorator.nameable.should eql @person
+    it 'checks if nameable is the initailze value' do
+      @trimmer_decorator.nameable.should eql @person
+    end
   end
-end
 
   describe '#correct_name' do
-  it 'returns a trimmed person name' do
-    @trimmer_decorator.correct_name.should eql 'Pascal'
+    it 'returns a trimmed person name' do
+      @trimmer_decorator.correct_name.should eql 'Pascal'
+    end
   end
- end
 end

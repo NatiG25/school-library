@@ -11,11 +11,11 @@ describe Student do
     end
 
     it 'check if the first value is 23 years old' do
-        @student.age.should eql 23
+      @student.age.should eql 23
     end
 
     it 'check if name is nati' do
-        @student.name.should eql 'Nati'
+      @student.name.should eql 'Nati'
     end
   end
 end

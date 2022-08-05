@@ -11,15 +11,15 @@ describe Book do
     end
   end
 
-  describe "#title" do
-  it "returns the correct title" do
-      @book.title.should eql "Atomic"
-      end
+  describe '#title' do
+    it 'returns the correct title' do
+      @book.title.should eql 'Atomic'
+    end
   end
 
   describe '#author' do
-  it'return book author' do
-      @book.author.should eq "James"
-      end
+    it 'return book author' do
+      @book.author.should eq 'James'
+    end
   end
 end

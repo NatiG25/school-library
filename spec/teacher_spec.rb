@@ -11,11 +11,11 @@ describe Teacher do
     end
 
     it 'check if the first value is Jarso' do
-        @teacher.name.should eql 'Jarso'
+      @teacher.name.should eql 'Jarso'
     end
 
     it 'check if specialization is Math' do
-        @teacher.specialization.should eql 'Math'
+      @teacher.specialization.should eql 'Math'
     end
   end
 end

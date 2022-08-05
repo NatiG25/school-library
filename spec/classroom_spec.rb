@@ -12,6 +12,6 @@ describe Classroom do
 
     it 'check if created class is Mathematics' do
       @classroom.label.should eql 'Mathematics'
-  end
+    end
   end
 end
