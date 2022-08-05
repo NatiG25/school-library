@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Solver do
   before :each do
     @solver = Solver.new
-    @fact=Solver.factorial(4)
+    @fact = Solver.factorial(4)
   end
 
   describe '#new' do

@@ -1,10 +1,11 @@
 require 'pp'
 class Solver
-   def self.factorial(n)
-    if n <= 0
-        return 1
+  def self.factorial(nbr)
+    nbr.negative? raise 'Sorry no negattive number allowed'
+    if nbr.zero?
+      1
     else
-       return n * factorial(n - 1)
+      nbr * factorial(nbr - 1)
     end
-   end
+  end
 end
