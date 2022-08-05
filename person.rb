@@ -2,7 +2,7 @@ require_relative './nameable'
 require_relative './decorator'
 
 class Person < Nameable
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :parent_perimission
   attr_reader :id, :rentals
 
   def initialize(age, name = 'Unknown', parent_perimission: true)
