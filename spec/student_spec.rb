@@ -12,13 +12,13 @@ describe Student do
     end
   end
 
-    it 'check if the first value is 23 years old' do
-      @student.age.should eql 23
-    end
+  it 'check if the first value is 23 years old' do
+    @student.age.should eql 23
+  end
 
-    it 'check if name is nati' do
-      @student.name.should eql 'Nati'
-    end
+  it 'check if name is nati' do
+    @student.name.should eql 'Nati'
+  end
 
   it 'check play_hookey method' do
     @student.play_hookey.should eql "¯\(ツ)/¯"
