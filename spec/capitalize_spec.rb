@@ -13,14 +13,14 @@ describe CapitalizeDecorator do
   end
 
   describe '#nameable' do
-  it 'checks if nameable is the initailze value' do
-    @capitalize_decorator.nameable.should eql @person
+    it 'checks if nameable is the initailze value' do
+      @capitalize_decorator.nameable.should eql @person
+    end
   end
-end
 
   describe '#correct_name' do
-  it 'returns a capitalized person name' do
-    @capitalize_decorator.correct_name.should eql 'Pascal'
+    it 'returns a capitalized person name' do
+      @capitalize_decorator.correct_name.should eql 'Pascal'
+    end
   end
- end
 end
