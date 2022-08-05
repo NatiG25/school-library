@@ -14,32 +14,32 @@ describe Rental do
   end
 
   describe '#person' do
-  it 'checks if person is the initailze value' do
-    @rental.person.should eql @person
+    it 'checks if person is the initailze value' do
+      @rental.person.should eql @person
+    end
   end
-end
 
   describe '#book' do
-  it 'checks if book is the initailze value' do
-    @rental.book.should eql @book
+    it 'checks if book is the initailze value' do
+      @rental.book.should eql @book
+    end
   end
- end
 
- describe '#date' do
- it 'checks if date is the initailze value' do
-   @rental.date.should eql '05/08/2022'
- end
-end
+  describe '#date' do
+    it 'checks if date is the initailze value' do
+      @rental.date.should eql '05/08/2022'
+    end
+  end
 
-describe '#personAttr' do
-it 'checks if inside the person attribute if there\'s the rental instance' do
-  @rental.person.rentals[0].should eql @rental
- end
-end
+  describe '#personAttr' do
+    it 'checks if inside the person attribute if there\'s the rental instance' do
+      @rental.person.rentals[0].should eql @rental
+    end
+  end
 
-describe '#bookAttr' do
-it 'checks if inside the book attribute if there\'s the rental instance' do
-  @rental.book.rentals[0].should eql @rental
- end
-end
+  describe '#bookAttr' do
+    it 'checks if inside the book attribute if there\'s the rental instance' do
+      @rental.book.rentals[0].should eql @rental
+    end
+  end
 end
