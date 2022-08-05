@@ -76,9 +76,9 @@ class Data
     return data unless File.exist?(file)
     return data if File.zero?(file)
 
-    JSON.parse(File.read(file)).each do |rental|
-      data << Rental.new(rental['person'], rental['book'], rental['date'])
-    end
+    # JSON.parse(File.read(file)).each do |rental|
+    #   data << Rental.new(rental['person'], rental['book'], rental['date'])
+    # end
     data
   end
 end

@@ -1,14 +1,10 @@
 require_relative './person'
 
 class Student < Person
-  attr_reader :classroom
+  attr_accessor :classroom
 
-  def initialize(age, name, parent_perimission, classroom: nil)
+  def initialize(age, name, parent_perimission, classroom = nil)
     super(age, name, parent_perimission: parent_perimission)
-    @classroom = classroom
-  end
-
-  def classroom=(classroom)
     @classroom = classroom
     classroom.students << self unless classroom.students.include?(self)
   end
