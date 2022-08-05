@@ -10,7 +10,7 @@ describe Student do
       @student.should be_an_instance_of Student
     end
 
-    it 'check if the firs value is 23 years old' do
+    it 'check if the first value is 23 years old' do
         @student.age.should eql 23
     end
 
