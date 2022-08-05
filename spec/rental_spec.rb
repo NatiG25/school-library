@@ -33,7 +33,13 @@ end
 
 describe '#personAttr' do
 it 'checks if inside the person attribute if there\'s the rental instance' do
-  @rental.person.rentals.should eql @rental
+  @rental.person.rentals[0].should eql @rental
+ end
+end
+
+describe '#bookAttr' do
+it 'checks if inside the book attribute if there\'s the rental instance' do
+  @rental.book.rentals[0].should eql @rental
  end
 end
 end
