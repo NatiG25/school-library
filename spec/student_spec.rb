@@ -14,5 +14,8 @@ describe Student do
         @student.age.should eql 23
     end
 
+    it 'check if name is nati' do
+        @student.name.should eql 'Nati'
+    end
   end
 end
