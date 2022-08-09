@@ -3,7 +3,8 @@ require 'spec_helper'
 describe Classroom do
   before :each do
     @classroom = Classroom.new('Mathematics')
-    @student = Student.new(23, 'Pascal', true, @classroom)
+    @student = Student.new(23, 'Pascal', true)
+      @classroom.add_student(@student)
   end
 
   describe '#new' do
@@ -22,7 +23,7 @@ describe Classroom do
     end
 
     it 'checks if student attribute has added classroom instance' do
-      @classroom.students[0].classroom = @classroom
+      @student.classroom = @classroom
     end
   end
 end
