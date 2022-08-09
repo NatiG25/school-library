@@ -4,6 +4,7 @@ describe Student do
   before :each do
     @classroom = Classroom.new('Aviation')
     @student = Student.new(23, 'Nati', true, @classroom)
+    @student.classroom = @classroom
   end
 
   describe '#new' do
@@ -25,6 +26,6 @@ describe Student do
   end
 
   it 'check classroom attribute in student' do
-    @student.classroom.students[0].should eql @student
+    @classroom.students[0].should eql @student
   end
 end
