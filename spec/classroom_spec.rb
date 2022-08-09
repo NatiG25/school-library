@@ -4,7 +4,7 @@ describe Classroom do
   before :each do
     @classroom = Classroom.new('Mathematics')
     @student = Student.new(23, 'Pascal', true)
-      @classroom.add_student(@student)
+    @classroom.add_student(@student)
   end
 
   describe '#new' do
